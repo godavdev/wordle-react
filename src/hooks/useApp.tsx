@@ -9,6 +9,7 @@ const useApp = () => {
     const [winner, setWinner] = useState(false)
     const [intent, setIntent] = useState("")
     const [previousIntents, setPreviousIntents] = useState<evaluatedLetter[][]>([])
+    //Audios
     const [playWin] = useSound("audio/pickupCoin.wav")
     const [pitch, setPitch] = useState(.75)
     const [playIncorrect] = useSound("audio/hitHurt.wav", { playbackRate: pitch, interrupt: true })
