@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion'
 import { itemVariant } from '../../data/framerVariants'
-const Title = ({ value, animated = true }: { value: string, animated?: boolean }) => {
+type sizeType = "BIG" | "MEDIUM"
+const Title = ({ value, size = "BIG", animated = true }: { value: string, size?: sizeType, animated?: boolean }) => {
     return (
         <motion.h2
-            className="md:text-7xl text-4xl font-bold"
+            className={`${size === "BIG" ? `md:text-7xl text-4xl` : `md:text-5xl text-2xl`} font-bold`}
             variants={animated ? itemVariant : undefined}
-            layout>
+            layout >
             {value}
-        </motion.h2>
+        </motion.h2 >
     )
 }
 
