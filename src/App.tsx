@@ -16,6 +16,7 @@ const App = () => {
 
   return (
     <div className="max-h-screen flex justify-center w-screen h-screen relative overflow-hidden ">
+      {}
       <AnimatePresence>
         {winner && <WinningModal />}
       </AnimatePresence>
