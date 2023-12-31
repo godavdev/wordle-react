@@ -20,7 +20,7 @@ const App = () => {
   }
 
   return (
-    <motion.div  className="max-h-screen flex justify-center w-screen h-screen relative overflow-hidden ">
+    <motion.div  className="max-h-dvh flex justify-center w-screen h-dvh relative overflow-hidden ">
       <div className="flex flex-col space-y-8 justify-center h-screen max-h-screen max-w-screen-lg items-center relative p-2">
         <AppForm answer={answer} centered={previousIntents.length === 0} handleChange={handleChange} handleSubmit={handleSubmit} intent={intent} winner={winner} />
         {
