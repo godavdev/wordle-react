@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const useModal = (initialState: boolean = true) => {
+const useModal = (initialState: boolean = false) => {
 
     const [modalVisible, setModalVisible] = useState(initialState)
 

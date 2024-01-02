@@ -13,7 +13,7 @@ const AppForm = ({ handleSubmit, answer, intent, handleChange, winner, centered 
             variants={containerVariant}
             initial='hidden'
             animate='visible'
-            className={`flex w-full h-1/2 max-h-[1/2] ${centered ? `justify-center` : `justify-end`} flex-col space-y-4 items-center`}>
+            className={`flex w-full md:h-1/2 max-h-[1/2] ${centered ? `justify-center` : `justify-end`} flex-col space-y-4 items-center`}>
             <Title value="React Wordle" />
             {!winner && <AutoFocusInput answer={answer} intent={intent} onChange={handleChange} />}
             <motion.div variants={itemVariant} className='flex flex-col'>
