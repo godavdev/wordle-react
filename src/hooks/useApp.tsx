@@ -16,7 +16,9 @@ const useApp = () => {
 
     //Today's answer's fetch
     useEffect(() => {
-        setAnswer("REACT".toUpperCase())
+        fetch("https://wordapi-production-b59c.up.railway.app/")
+            .then(res => res.json())
+            .then(data => setAnswer(data.text.toUpperCase()))
     }, [])
 
     //Intent value change
