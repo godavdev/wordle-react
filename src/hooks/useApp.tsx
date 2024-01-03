@@ -11,7 +11,7 @@ const useApp = () => {
     const [previousIntents, setPreviousIntents] = useState<evaluatedLetter[][]>([])
     //Audios
     const [playWin] = useSound("audio/pickupCoin.wav")
-    const [pitch, setPitch] = useState(.75)
+    const [pitch, setPitch] = useState(.45)
     const [playIncorrect] = useSound("audio/hitHurt.wav", { playbackRate: pitch, interrupt: true })
 
     //Today's answer's fetch
